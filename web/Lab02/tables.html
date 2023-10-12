@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <title>Tables</title>
     <style>
+        .table3 {
+            border: 1px solid black;
+            height: 200px;
+        }
+        .table3 th, .table3 td  {
+            border: 1px solid black;
+            padding: 5px
+        }
         .table2
         {
-            border: 2px solid green;
-            border-collapse: collapse;
+            border: 3px ridge lightgray;
         }
+        .table2 th, .table2 td  {
+            border: 3px ridge lightgray;
+        }
+
+        .table4
+        {
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+        .table4 th, .table4 td  {
+            border: 1px solid black;
+            text-align:start;
+        }
+
         table, th, td {
             border: 2px solid black;
             border-collapse: collapse;
@@ -19,11 +40,13 @@
         }
         table {
             margin: auto;
-            width: 50%
+            width: 50%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+<h2 id="start"><a href="index.html">До index.html</a></h2>
 <table>
     <caption>Перша таблиця</caption>
     <thead style="background-color: yellow">
@@ -63,8 +86,7 @@
     </tr>
     </tfoot>
 </table>
-<div style=".table2">
-<table>
+<table class="table2">
     <caption>Друга таблиця</caption>
     <thead>
     <tr>
@@ -113,10 +135,54 @@
         <td>th</td>
     </tr>
 </table>
-</div>
-<table>
-
+<table class="table3">
+    <caption>Третя таблиця</caption>
+    <tr>
+        <td rowspan="3" colspan="2">1</td>
+        <td colspan="2">2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: left">4</td>
+    </tr>
+    <tr>
+        <td rowspan="3" style="text-align:center; vertical-align: top; padding-top: 20px">5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td rowspan="2" style="text-align:start; vertical-align: top">9</td>
+        <td colspan="2" rowspan="2">10</td>
+    </tr>
+    <tr>
+        <td>11</td>
+    </tr>
 </table>
-
+<table class="table4">
+    <caption>Четверта таблиця</caption>
+    <tr>
+        <td rowspan="3" colspan="2">1<img src="Images/1.png"/></td>
+        <td colspan="2">2<img src="Images/2.png"/></td>
+        <td>3<img src="Images/3.png"/></td>
+    </tr>
+    <tr>
+        <td colspan="3">4</td>
+    </tr>
+    <tr>
+        <td rowspan="3">5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td rowspan="2">9</td>
+        <td colspan="2" rowspan="2">10</td>
+    </tr>
+    <tr>
+        <td>11</td>
+    </tr>
+</table>
+<p><a href="#start">наверх</a></p>
 </body>
 </html>
