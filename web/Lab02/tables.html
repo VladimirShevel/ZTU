@@ -2,9 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tables</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align:center;
+        }
+        caption {
+            text-align: start;
+        }
+        table {
+            margin: auto;
+            width: 50%
+        }
+    </style>
 </head>
 <body>
+<table>
+    <caption>Перша таблиця</caption>
+    <thead style="background-color: yellow">
+        <tr>
+            <th>№</th>
+            <th>ПІБ</th>
+            <th>Адреса</th>
+            <th>Телефон</th>
+        </tr>
+    </thead>
+    <tr>
+        <td style="background-color: aqua">1</td>
+        <td>ПІБ1</td>
+        <td>Адреса1</td>
+        <td>111111</td>
+    </tr>
+    <tr>
+        <td style="background-color: aqua">2</td>
+        <td>ПІБ2</td>
+        <td>Адреса2</td>
+        <td>222222</td></tr>
+    <tr>
+        <td style="background-color: aqua">3</td>
+        <td>ПІБ3</td>
+        <td>Адреса3</td>
+        <td>333333</td></tr>
+    <tr>
+        <td style="background-color: aqua">4</td>
+        <td>ПІБ4</td>
+        <td>Адреса4</td>
+        <td>444444</td>
+    </tr>
+    <tfoot style="background-color: green; font-weight: bold">
+    <tr>
+        <td colspan="3" style="text-align: end">Загальна кількість</td>
+        <td>4</td>
+    </tr>
+    </tfoot>
+</table>
+
+<table style="border: 2px">
+    <caption>Друга таблиця</caption>
+    <thead>
+    <tr>
+        <th rowspan="2">номер</th>
+        <th colspan="2">теги</th>
+    </tr>
+    <tr>
+        <th>тег</th>
+        <th style="width: 50%">призначення</th>
+    </tr>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>p</td>
+        <td rowspan="4">для тексту</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>a</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>b</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>i</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>table</td>
+        <td>таблиця</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>tr</td>
+        <td>рядок таблиці</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>td</td>
+        <td rowspan="2">комірки таблиці</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>th</td>
+    </tr>
+</table>
+<table>
+
+</table>
 
 </body>
 </html>
